@@ -24,4 +24,14 @@ body {
   font-family: "Chakra Petch", sans-serif;
 }
 
+main{
 
+}
+
+ header.primary{ 
+  background-color: #732C46;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
+}
+
+ 
