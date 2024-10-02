@@ -1,7 +1,10 @@
 /* ------  css-demo --------*/
 
 /*  ---- Color Scheme ---- 
-Main Color - #3C85FA
+Main Color - #72Eb9C
+Secondary - #732C46 
+Tertiary - #F6AA6E
+OTHERS GREENS -  #467359, #2C592A
 
 */
 
@@ -18,6 +21,7 @@ html {
 
 
 body {
-    
-
+  font-family: "Chakra Petch", sans-serif;
 }
+
+
