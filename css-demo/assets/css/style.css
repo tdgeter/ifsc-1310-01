@@ -14,7 +14,7 @@ html {
     box-sizing: border-box;
   }
   *,
-  *:before,
+  *:before, 
   *:after {
     box-sizing: inherit;
   }
@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Chakra Petch", sans-serif;
+  margin: 0px;
 }
 
 main{
@@ -29,9 +30,70 @@ main{
 }
 
  header.primary{ 
-  background-color: #732C46;
+  background-color:#72EB9C; 
   color: #FFFFFF;
-  text-shadow: 2px 2px #000000;
+  text-align: center;
+  text-shadow: 1px 1px 3px;
+  padding: 40px;
 }
 
+header.primary h1{
+  font-size: 2.4rem;
+  margin: 20px 0 0; /* T, LR, B */
+}
+
+header.primary h1 a{
+color: #FFFFFF;
+text-decoration: none; /* removes underline of a link */
+align-content: center;
+}
+
+header.primary h2{
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+header.primary nav{
+  margin-top: 40px;
+}
  
+header.primary nav ul{
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  padding:0; /*Add this to account for deletion of bullets in our list*/
+}
+
+header.primary nav ul li{
+list-style-type: none;
+}
+
+header.primary nav ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 1px solid #467359;
+  padding: 7.5px 10px;
+  background-color: rgba(44, 89, 42, .8);
+  border-radius: 20px;
+  transition: .2s;
+}
+
+header.primary nav ul li a:hover{
+ 
+  background-color: rgba(44, 89, 42, 1);
+  text-decoration: underline;
+}
+
+
+
+/* ------ Media Queries ------ */
+
+@media screen and (max-width: 560px) {
+/*This Querey is going to check the current screen size, and adjust our CSS presentation.*/
+  
+header.primary nav ul{
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+  }
+}
