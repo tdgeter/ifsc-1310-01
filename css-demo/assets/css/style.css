@@ -19,6 +19,19 @@ html {
     box-sizing: inherit;
   }
 
+/* ---------- Utility Classes ---------- */
+
+.container{
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto; 
+  ;
+}
+
+/* ---------- Responsive Images ---------- */
+img{
+  max-width: 100%;
+}
 
 body {
   font-family: "Chakra Petch", sans-serif;
@@ -54,7 +67,8 @@ header.primary h2{
 }
 
 header.primary nav{
-  margin-top: 40px;
+  max-width: 960px;
+  margin: 40px auto;
 }
  
 header.primary nav ul{
@@ -73,7 +87,7 @@ header.primary nav ul li a{
   text-decoration: none;
   border: 1px solid #467359;
   padding: 7.5px 10px;
-  background-color: rgba(44, 89, 42, .8);
+  background-color: rgba(44, 89, 42, .8); /*red, green, blue, alpha*/
   border-radius: 20px;
   transition: .2s;
 }
@@ -84,7 +98,44 @@ header.primary nav ul li a:hover{
   text-decoration: underline;
 }
 
+#content h2{
+  color: #467359;
+  border-bottom: 3px solid #467359;
+}
 
+#blog{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#blog article.post{
+  box-shadow: 0 4px 8px rgba(44, 89, 42, .8);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: .8rem;
+  transition: .4s; /*Add this here and not the psudeo class so that it applies to every element*/
+}
+
+#blog article.post:hover{
+  box-shadow: 0 16px 16px rgba(44, 89, 42, .8);
+}
+
+#blog figure{
+  margin: 0;
+}
+
+#blog figcaption, time.post-date{
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #732C46
+}
+
+#blog .post a{
+  color: #467359;
+}
 
 /* ------ Media Queries ------ */
 
