@@ -188,6 +188,7 @@ aside article.widget a{
   color: #000000; 
 }
 
+
 /*This will target the last type instead of every instance*/
 aside article.widget a:last-of-type{ 
   display: block;
