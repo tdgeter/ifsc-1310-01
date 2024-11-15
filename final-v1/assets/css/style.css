@@ -8,6 +8,50 @@ Tertiary - #038C7F
 Pulled from Space X Logo that was provided.
 */
 
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* ---------- Utility Classes ---------- */
+
+.container{
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto; 
+  ;
+}
+
+.img-right{
+  float: right;
+  border: 1px solid #467359;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float: left;
+  border: 1px solid #467359;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 20px 10px 0; /*Top, Right, Bottom, Left*/
+}
+
+.img-center{
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #467359;
+  border-radius: 20px;
+  padding: 5px;
+}
+
 /* ---------- Responsive Images ---------- */
 img{
     max-width: 100%;
@@ -40,6 +84,7 @@ header.primary nav ul{
     justify-content:space-around;
     font-size: 1.6rem;
     list-style-type: none;
+    padding:0;
 }
 
 header.primary nav ul a{
@@ -49,6 +94,16 @@ header.primary nav ul a{
 
 header.primary nav ul li a:hover{
     text-decoration: underline;
+}
+
+section{
+    background-color: #03588C;
+}
+
+section.configurations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
