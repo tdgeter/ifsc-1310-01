@@ -96,14 +96,20 @@ header.primary nav ul li a:hover{
     text-decoration: underline;
 }
 
-section{
-    background-color: #03588C;
-}
-
-section.configurations{
+section#configurations{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 40px 40px;
+    border-top: 3px solid #467359;
+    border-bottom: 3px solid #467359;
+}
+
+section#configurations article.configuration{
+  background-color: #467359;
+  font-size: .7rem;
+  width: 33%;
 }
 
 
@@ -144,4 +150,13 @@ footer{
             gap: 30px;
           
         }
+
+        section#configurations{
+          flex-direction: column;
+          align-items: center;
+      }
+
+      section#configurations article.configuration{
+        width: 100%;
+      }
 }
