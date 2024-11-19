@@ -145,6 +145,11 @@ section#configurations article.configuration{
   display: block;
 }
 
+#recent-missions table{
+  border: 1px solid #03588C;
+  border-collapse: collapse;
+}
+
 footer.primary{
     background-color: #000000;
     color: #FFFFFF;
