@@ -1,6 +1,7 @@
 
+$(document).ready(function() {
 
-$('.slider-for').slick({
+  $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -19,3 +20,5 @@ $('.slider-for').slick({
     instructionsText: 'Changing the current slide of this carousel will change the current slide of the preceding main image carousel.',
     regionLabel: 'thumbnail carousel'
   });
+
+});
