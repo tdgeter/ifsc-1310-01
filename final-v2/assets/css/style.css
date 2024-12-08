@@ -1,11 +1,11 @@
 /*-----Final Draft-----*/
 
 /*-----Theme Colors-----
+Pulled from Space X Logo that was provided.
+
 Main Color - #03588C
 Secondary - #A4A5A6
 Tertiary - #038C7F
-
-Pulled from Space X Logo that was provided.
 */
 
 /*  ---------------Box Sizing-----------------  */
@@ -195,6 +195,10 @@ td{
   text-align: center;
 }
 
+#recent-missions a{
+  color: #000000;
+}
+
 .dropdown {
   position: relative;
   display: block;
@@ -227,6 +231,15 @@ footer.primary{
     padding: 1px;
 }
 
+footer.primary a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+footer.primary a:hover{
+  text-decoration: underline;
+}
 /* Customize Previous/Next/Dots/Autoplay */
 
 .slick-autoplay-toggle-button,
