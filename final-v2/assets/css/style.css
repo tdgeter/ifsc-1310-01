@@ -73,9 +73,11 @@ header.primary a{
     width: 30%;
     height: auto;
 }
+
 header.primary nav{
     width: 70%;
 }
+
 header.primary nav ul{
     display: flex;
     flex-direction: row;
@@ -94,17 +96,39 @@ header.primary nav ul li a:hover{
     text-decoration: underline;
 }
 
+section#overview h1{
+  color: #03588C;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+section#overview h2{
+  font-size: .8rem;
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  font-size: 1.4rem;
+  border-bottom: 3px solid #03588C;
+  margin-top: 60px;
+}
+
 section#configurations{
   background: #03588C;
 }
 
 section#configurations h3{
- text-align: center;
- padding: 20px;
-}
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 20px 0 0 0;
+ }
 
-section#configurations div{
-    padding: 40px 40px;
+section#configurations h4{
+ font-size: 1.4rem;
+ text-align: center;
+ padding: 20px 0 0 0;
 }
 
 section#configurations article.configuration{
@@ -112,11 +136,63 @@ section#configurations article.configuration{
   border-radius: 20px;
   font-size: .7rem;
   width: 33%;
+  padding: 20px;
+}
+
+/*Add this to add spacing between slides*/
+ .slick-slide {
+  margin: 0 30px;
+  padding: 0 0 70px 0;
+}
+
+/*Add these to make the buttons show inside of the config section background*/
+.slick-dots{
+  bottom: 10px;
+}
+
+.slick-autoplay-toggle-button{
+  bottom: 10px;
 }
 
 section#configurations img{
  border-top: 1px solid black;
  border-bottom: 1px solid black;
+}
+
+#recent-missions table{
+  width: 100%;
+  border: 1px solid #03588C;
+  border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  margin: 10px;
+  color: #03588C;
+}
+
+thead{
+
+}
+
+tr:nth-child(even){
+  background-color: rgba(3, 88, 140, .5);
+}
+
+tr:hover{
+  background-color: rgba(3, 88, 140, .8);
+}
+
+th{
+  background-color: #03588C;
+  color: #000000;
+  padding: 5px
+}
+
+td{
+  border: 1px solid #03588C;
+  padding: 3px;
+  text-align: center;
 }
 
 .dropdown {
@@ -144,11 +220,6 @@ section#configurations img{
   display: block;
 }
 
-#recent-missions table{
-  border: 1px solid #03588C;
-  border-collapse: collapse;
-}
-
 footer.primary{
     background-color: #000000;
     color: #FFFFFF;
@@ -162,7 +233,7 @@ footer.primary{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .slick-autoplay-toggle-button:hover,
@@ -184,13 +255,6 @@ footer.primary{
 {
     color:black;
 }
-
-
-
-
-
-
-
 
 
 /* ------ Media Queries ------ */
