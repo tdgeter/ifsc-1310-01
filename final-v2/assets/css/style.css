@@ -196,6 +196,8 @@ td{
 }
 
 #recent-missions a{
+  display: block;
+  text-align: right;
   color: #000000;
 }
 

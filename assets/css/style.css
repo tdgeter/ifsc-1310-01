@@ -44,11 +44,17 @@ section{
         border-top: 3px solid #000000;
 }
 
+#progressive-enhancement a{
+        color: #000000;
+        display: block;
+        text-align: right;
+}
+
 nav ul li a{
         color: black;
 }
 
-nav ul li a:hover{
+a:hover{
         color: black;
         text-decoration: underline double;
 }
